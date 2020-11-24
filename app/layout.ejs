@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="row">
+    <div class="sideMenu p-5 col-2 vh-100">
+      <img class="mb-5"
+        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action list-li mb-3 d-flex align-items-center font-weight-bold id="list-dashboard-list"
+          data-toggle="list" href="#list-dashboard" role="tab" aria-controls="dashboard">
+          <span class="material-icons">assessment</span>Dashboard</a>
+        <a class="list-group-item list-group-item-action list-li mb-3 d-flex align-items-center font-weight-bold" id="list-question-list"
+          data-toggle="list" href="#list-question" role="tab" aria-controls="question"><span class="material-icons">
+            question_answer
+          </span>Question</a>
+        <a class="list-group-item list-group-item-action list-li mb-3 d-flex align-items-center font-weight-bold" id="list-assignment-list"
+          data-toggle="list" href="#list-assignment" role="tab" aria-controls="assignment"><span class="material-icons">
+            assignment
+          </span>Assignment</a>
+        <a class="list-group-item list-group-item-action list-li mb-3 d-flex align-items-center font-weight-bold" id="list-course-list"
+          data-toggle="list" href="#list-course" role="tab" aria-controls="course"><span class="material-icons">
+            video_library
+          </span>Course</a>
+        <a class="list-group-item list-group-item-action list-li mb-3 d-flex align-items-center font-weight-bold active " id="list-Admin-list"
+          data-toggle="list" href="#list-Admin" role="tab" aria-controls="Admin"><span class="material-icons">
+            supervisor_account
+          </span>Admin</a>
+        <a class="list-group-item list-group-item-action list-li mb-3 d-flex align-items-center font-weight-bold" id="list-settings-list"
+          data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><span class="material-icons">
+            settings
+          </span>Settings</a>
+          <div class="profile d-flex align-items-center">
+            <img class="rounded-circle mr-3" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true">
+            <div>
+              <h2>Andy Chen</h2>
+              <p>andy0401@mail.com</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-10 p-5">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade" id="list-dashboard" role="tabpanel" aria-labelledby="list-dashboard-list">...</div>
+        <div class="tab-pane fade" id="list-question" role="tabpanel" aria-labelledby="list-question-list">...</div>
+        <div class="tab-pane fade" id="list-assignment" role="tabpanel" aria-labelledby="list-assignment-list">...</div>
+        <div class="tab-pane fade" id="list-course" role="tabpanel" aria-labelledby="list-course-list">...</div>
+        <div class="tab-pane fade show active" id="list-Admin" role="tabpanel" aria-labelledby="list-course-list"><%- contents %></div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-course-list">...</div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
